@@ -9,5 +9,8 @@ type GoodsController struct {
 }
 
 func (c *GoodsController) Get() {
-	c.TplName = "goods.html"
+
+	c.Data["title"] = "你好，商品"
+	c.Data["num"] = 12
+	c.TplName = "goods.tpl"
 }
