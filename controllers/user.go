@@ -53,7 +53,7 @@ type User struct {
 func (c *UserController) DoEditUser() {
 
 	u := User{}
-	err := c.ParseForm(&u)
+	// err := c.ParseForm(&u)
 	if err := c.ParseForm(&u); err != nil {
 		c.Ctx.WriteString("Post提交失败")
 	}
